@@ -448,7 +448,7 @@ public class calc implements ActionListener {
         longTermLiabilitiesLabel = new JLabel("Long-Term:");
         longTermLiabilitiesLabel.setBounds(10,510,200,15);
 
-        homeMortgageLabel
+        homeMortgageLabel = new JLabel("Home mortgage:");
         homeMortgageLabel
         homeMortgageDSL
         homeMortgageDSL
