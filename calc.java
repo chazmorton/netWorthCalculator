@@ -517,7 +517,6 @@ public class calc implements ActionListener {
         totalNetWorthTF = new JTextField();
         totalNetWorthTF.setBounds(105,650,150,15);
         totalNetWorthTF.setEditable(false);
-        
         //END OF NET WORTH
 
         frame.add(nwc);
