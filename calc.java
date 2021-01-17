@@ -422,101 +422,102 @@ public class calc implements ActionListener {
         currentLiabilitiesLabel = new JLabel("Current:");
         currentLiabilitiesLabel.setBounds(10,460,200,15);
 
-        creditCardBalancesLabel = new JLabel("Current:");
-        creditCardBalancesLabel.setBounds(30,480,200,15);
+        creditCardBalancesLabel = new JLabel("Credit cards:");
+        creditCardBalancesLabel.setBounds(30,490,200,15);
         creditCardBalancesDSL = new JLabel("$");
-        creditCardBalancesDSL.setBounds(150,,480,10,15);
+        creditCardBalancesDSL.setBounds(150,490,10,15);
         creditCardBalancesTF = new JTextField();
-        creditCardBalancesTF.setBounds(160,480,150,15);
+        creditCardBalancesTF.setBounds(160,490,150,15);
 
-        incomeTaxOwedLabel = new JLabel("Credit card balances:");
-        incomeTaxOwedLabel.setBounds(320,480,200,115);
+        incomeTaxOwedLabel = new JLabel("Income tax:");
+        incomeTaxOwedLabel.setBounds(320,440,200,115);
         incomeTaxOwedDSL = new JLabel("$");
-        incomeTaxOwedDSL.setBounds(440,480,10,15);
+        incomeTaxOwedDSL.setBounds(440,490,10,15);
         incomeTaxOwedTF = new JTextField();
-        incomeTaxOwedTF.setBounds(450,480,150,15);
+        incomeTaxOwedTF.setBounds(450,490,150,15);
 
-        otherBillsLabel = new JLabel("Income tax owed:");
-        otherBillsLabel.setBounds(610,480,200,15);
+        otherBillsLabel = new JLabel("Other bills:");
+        otherBillsLabel.setBounds(610,490,200,15);
         otherBillsDSL = new JLabel("$");
-        otherBillsDSL.setBounds(740,480,10,15);
+        otherBillsDSL.setBounds(740,490,10,15);
         otherBillsTF = new JTextField();
-        otherBillsTF.setBounds(750,480,150,15);
+        otherBillsTF.setBounds(750,490,150,15);
         //end of current liabilites
 
         //start of long term liabilites
         longTermLiabilitiesLabel = new JLabel("Long-Term:");
-        longTermLiabilitiesLabel.setBounds(10,510,200,15);
+        longTermLiabilitiesLabel.setBounds(10,520,200,15);
 
         homeMortgageLabel = new JLabel("Home mortgage:");
-        homeMortgageLabel
-        homeMortgageDSL
-        homeMortgageDSL
-        homeMortgageTF
-        homeMortgageTF
+        homeMortgageLabel.setBounds(30,550,200,15);
+        homeMortgageDSL = new JLabel("$");
+        homeMortgageDSL.setBounds(150,550,10,15);
+        homeMortgageTF = new JTextField();
+        homeMortgageTF.setBounds(160,550,150,15);
 
-        homeEquityLoanLabel
-        homeEquityLoanLabel
-        homeEquityLoanDSL
-        homeEquityLoanDSL
-        homeEquityLoanTF
-        homeEquityLoanTF
+        homeEquityLoanLabel = new JLabel("Home equity loan:");
+        homeEquityLoanLabel.setBounds(320,550,200,15);
+        homeEquityLoanDSL = new JLabel("$");
+        homeEquityLoanDSL.setBounds(440,550,10,15);
+        homeEquityLoanTF = new JTextField();
+        homeEquityLoanTF.setBounds(450,550,150,15);
 
-        rentalPropertyMortgagesLabel
-        rentalPropertyMortgagesLabel
-        rentalPropertyMortgagesDSL
-        rentalPropertyMortgagesDSL
-        rentalPropertyMortgagesTF
-        rentalPropertyMortgagesTF
+        rentalPropertyMortgagesLabel = new JLabel("Rental mortgages:");
+        rentalPropertyMortgagesLabel.setBounds(610,550,200,15);
+        rentalPropertyMortgagesDSL = new JLabel("$");
+        rentalPropertyMortgagesDSL.setBounds(740,550,10,15);
+        rentalPropertyMortgagesTF = new JTextField();
+        rentalPropertyMortgagesTF.setBounds(750,550,150,15);
 
-        carLoansLabel
-        carLoansLabel
-        carLoansDSL
-        carLoansDSL
-        carLoansTF
-        carLoansTF
+        carLoansLabel = new JLabel("Car loans:");
+        carLoansLabel.setBounds(30,570,200,15);
+        carLoansDSL = new JLabel("$");
+        carLoansDSL.setBounds(150,570,10,15);
+        carLoansTF = new JTextField();
+        carLoansTF.setBounds(160,570,150,15);
 
-        studentLoansLabel
-        studentLoansLabel
-        studentLoansDSL
-        studentLoansDSL
-        studentLoansTF
-        studentLoansTF
+        studentLoansLabel = new JLabel("Student loans:");
+        studentLoansLabel.setBounds(320,570,200,15);
+        studentLoansDSL = new JLabel("$");
+        studentLoansDSL.setBounds(440,570,10,15);
+        studentLoansTF = new JTextField();
+        studentLoansTF.setBounds(450,570,150,15);
 
-        lifeInsuranceLoansLabel
-        lifeInsuranceLoansLabel
-        lifeInsuranceLoansDSL
-        lifeInsuranceLoansDSL
-        lifeInsuranceLoanTF
-        lifeInsuranceLoanTF
+        lifeInsuranceLoansLabel = new JLabel("Life insurance loans:");
+        lifeInsuranceLoansLabel.setBounds(610,570,200,15);
+        lifeInsuranceLoansDSL = new JLabel("$");
+        lifeInsuranceLoansDSL.setBounds(740,570,10,15);
+        lifeInsuranceLoanTF = new JTextField();
+        lifeInsuranceLoanTF.setBounds(750,570,150,15);
         
-        otherLongTermDebtLabel
-        otherLongTermDebtLabel
-        otherLongTermDebtDSL
-        otherLongTermDebtDSL
-        otherLongTermDebtTF
-        otherLongTermDebtTF
+        otherLongTermDebtLabel = new JLabel("Other debt:");
+        otherLongTermDebtLabel.setBounds(30,590,200,15);
+        otherLongTermDebtDSL = new JLabel("$");
+        otherLongTermDebtDSL.setBounds(150,590,10,15);
+        otherLongTermDebtTF = new JTextField();
+        otherLongTermDebtTF.setBounds(160,590,150,15);
         //end of long term liabilites
 
         //start of total liabilites
-        totalLiabilitesLabel
-        totalLiabilitesLabel
-        totalLiabilitesDSL
-        totalLiabilitesDSL
-        totalLiabilitesTF
-        totalLiabilitesTF
+        totalLiabilitesLabel = new JLabel("TOTAL LIABILITIES:");
+        totalLiabilitesLabel.setBounds(10,620,200,15);
+        totalLiabilitesDSL = new JLabel("$");
+        totalLiabilitesDSL.setBounds(130,620,10,15);
+        totalLiabilitesTF = new JTextField();
+        totalLiabilitesTF.setBounds(140,620,150,15);
         totalLiabilitesTF.setEditable(false);
         //end of total liabilites
         //END OF LIABILITIES
 
         //START OF NET WORTH
-        totalNetWorthLabel
-        totalNetWorthLabel
-        totalNetWorthDSL
-        totalNetWorthDSL
-        totalNetWorthTF
-        totalNetWorthTF
+        totalNetWorthLabel = new JLabel("NET WORTH:");
+        totalNetWorthLabel.setBounds(10,650,200,15);
+        totalNetWorthDSL = new JLabel("$");
+        totalNetWorthDSL.setBounds(95,650,10,15);
+        totalNetWorthTF = new JTextField();
+        totalNetWorthTF.setBounds(105,650,150,15);
         totalNetWorthTF.setEditable(false);
+        
         //END OF NET WORTH
 
         frame.add(nwc);
@@ -607,6 +608,45 @@ public class calc implements ActionListener {
         frame.add(totalAssetsLabel);
         frame.add(totalAssetsDSL);
         frame.add(totalAssetsTF);
+        frame.add(liabilitiesLabel);
+        frame.add(currentLiabilitiesLabel);
+        frame.add(creditCardBalancesLabel);
+        frame.add(creditCardBalancesDSL);
+        frame.add(creditCardBalancesTF);
+        frame.add(incomeTaxOwedLabel);
+        frame.add(incomeTaxOwedDSL);
+        frame.add(incomeTaxOwedTF);
+        frame.add(otherBillsLabel);
+        frame.add(otherBillsDSL);
+        frame.add(otherBillsTF);
+        frame.add(longTermLiabilitiesLabel);
+        frame.add(homeMortgageLabel);
+        frame.add(homeMortgageDSL);
+        frame.add(homeMortgageTF);
+        frame.add(homeEquityLoanLabel);
+        frame.add(homeEquityLoanDSL);
+        frame.add(homeEquityLoanTF);
+        frame.add(rentalPropertyMortgagesLabel);
+        frame.add(rentalPropertyMortgagesDSL);
+        frame.add(rentalPropertyMortgagesTF);
+        frame.add(carLoansLabel);
+        frame.add(carLoansDSL);
+        frame.add(carLoansTF);
+        frame.add(studentLoansLabel);
+        frame.add(studentLoansDSL);
+        frame.add(studentLoansTF);
+        frame.add(lifeInsuranceLoansLabel);
+        frame.add(lifeInsuranceLoansDSL);
+        frame.add(lifeInsuranceLoanTF);
+        frame.add(otherLongTermDebtLabel);
+        frame.add(otherLongTermDebtDSL);
+        frame.add(otherLongTermDebtTF);
+        frame.add(totalLiabilitesLabel);
+        frame.add(totalLiabilitesDSL);
+        frame.add(totalLiabilitesTF);
+        frame.add(totalNetWorthLabel);
+        frame.add(totalNetWorthDSL);
+        frame.add(totalNetWorthTF);
 
         frame.setSize(1000,1000);
         frame.setLayout(null);
