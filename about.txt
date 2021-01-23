@@ -5,5 +5,6 @@ Using Java Swing library to create gui that calculates one's personal net worth
 Takes total amount of assets
 Takes total amount of liabilities
 Subtracts liabilities from assets to get personal net worth
+Using Personal Net Worth Worksheet provided by Charles Schwab
 
 created by Chaz Morton

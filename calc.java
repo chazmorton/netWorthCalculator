@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-public class calc implements ActionListener {
+public class calc implements ActionListener{
 
     //Net Worth Calculator Label
     JLabel nwc;
@@ -516,6 +516,12 @@ public class calc implements ActionListener {
         totalNetWorthTF.setEditable(false);
         //END OF NET WORTH
 
+        //CALCULATE BUTTON
+        JButton calculate = new JButton("CALCULATE");
+        calculate.setBounds(10,680,150,15);
+        calculate.addActionListener(this);
+        //CALCULATE BUTTON
+
         frame.add(nwc);
         frame.add(assetsLabel);
         frame.add(cashAndCashEquivalentsLabel);
@@ -644,11 +650,105 @@ public class calc implements ActionListener {
         frame.add(totalNetWorthDSL);
         frame.add(totalNetWorthTF);
 
+        frame.add(calculate);
+
         frame.setSize(1000,1000);
         frame.setLayout(null);
         frame.setVisible(true);
     }
-    
+    public void actionPerformed(ActionEvent e) {
+        String checkingAccountStringValue = checkingTF.getText();
+        String savingsAccountStringValue = savingsTF.getText();
+        String moneyMarketStringValue = moneyMarketAccountsTF.getText();
+        String savingsBondsStringValue = savingsBondTF.getText();
+        String cdsStringValue = cdsTF.getText();
+        String cashValueStringValue = cashValueLifeInsuranceTF.getText();
+        String brokerageStringValue = brokerageTF.getText();
+        String iraStringValue = iraTF.getText();
+        String rothiraStringValue = rothiraTF.getText();
+        String fourZeroOneStringValue = fourZeroOneKTF.getText();
+        String sepiraStringValue = sepiraTF.getText();
+        String keoghStringValue = keoughTF.getText();
+        String pensionStringValue = pensionTF.getText();
+        String annuityStringValue = annuityTF.getText();
+        String realestateStringValue = realestateTF.getText();
+        String solePropietorshipStringValue = solePropietorshipTF.getText();
+        String partnershipStringValue = partnershipTF.getText();
+        String cCorporationStringValue = cCorporationTF.getText();
+        String sCorporationStringValue = sCorporationTF.getText();
+        String limitedLiabilityStringValue = limitedLiabilityCompanyTF.getText();
+        String principalStringValue = principalTF.getText();
+        String vacationHomeStringValue = vacationHomeTF.getText();
+        String vehiclesStringValue = vehiclesTF.getText();
+        String homeFurnishingStringValue = homeFurnishingTF.getText();
+        String collectiblesStringValue = collectiblesTF.getText();
+        String jewelryFursStringValue = jewelryFursTF.getText();
+
+        String creditCardStringValue = creditCardBalancesTF.getText();
+        String incomeTaxStringValue = incomeTaxOwedTF.getText();
+        String otherBillsStringValue = otherBillsTF.getText();
+        String homeMortgageStringValue = homeMortgageTF.getText();
+        String rentalPorpertyMortgagesStringValue = rentalPropertyMortgagesTF.getText();
+        String carLoansStringValue = carLoansTF.getText();
+        String studentLoansStringValue = studentLoansTF.getText();
+        String lifeInsuranceStringValue = lifeInsuranceLoanTF.getText();
+        String otherLongtermDebtStringValue = otherLongTermDebtTF.getText();
+
+        int checkingAccountIntValue = Integer.parseInt(checkingAccountStringValue);
+        int savingsAccountIntValue = Integer.parseInt(savingsAccountStringValue);
+        int moneyMarketIntValue = Integer.parseInt(moneyMarketStringValue);
+        int savingsBondsIntValue = Integer.parseInt(savingsBondsStringValue);
+        int cdsIntValue = Integer.parseInt(cdsStringValue);
+        int cashValueIntValue = Integer.parseInt(cashValueStringValue);
+        int brokerageIntValue = Integer.parseInt(brokerageStringValue);
+        int iraIntValue = Integer.parseInt(iraStringValue);
+        int rothiraIntValue = Integer.parseInt(rothiraStringValue);
+        int fourZeroOneIntValue = Integer.parseInt(fourZeroOneStringValue);
+        int sepiraIntValue = Integer.parseInt(sepiraStringValue);
+        int keoghIntValue = Integer.parseInt(keoghStringValue);
+        int pensionIntValue = Integer.parseInt(pensionStringValue);
+        int annuityIntValue = Integer.parseInt(annuityStringValue);
+        int realestateIntValue = Integer.parseInt(realestateStringValue);
+        int solePropietorshipIntValue = Integer.parseInt(solePropietorshipStringValue);
+        int partnershipIntValue = Integer.parseInt(partnershipStringValue);
+        int cCorporationIntValue = Integer.parseInt(cCorporationStringValue);
+        int sCorporationIntValue = Integer.parseInt(sCorporationStringValue);
+        int limitedLiabilityIntValue = Integer.parseInt(limitedLiabilityStringValue);
+        int principalIntValue = Integer.parseInt(principalStringValue);
+        int vacationHomeIntValue = Integer.parseInt(vacationHomeStringValue);
+        int vehiclesIntValue = Integer.parseInt(vehiclesStringValue);
+        int homeFurnishingIntValue = Integer.parseInt(homeFurnishingStringValue);
+        int collectiblesIntValue = Integer.parseInt(collectiblesStringValue);
+        int jewelryFursIntValue = Integer.parseInt(jewelryFursStringValue);
+
+        int totalAssetsIntValue = checkingAccountIntValue + savingsAccountIntValue + moneyMarketIntValue + savingsBondsIntValue + cdsIntValue + 
+        cashValueIntValue + brokerageIntValue + iraIntValue + rothiraIntValue + fourZeroOneIntValue + sepiraIntValue + keoghIntValue + 
+        pensionIntValue + annuityIntValue + realestateIntValue + solePropietorshipIntValue + partnershipIntValue + cCorporationIntValue + 
+        sCorporationIntValue + limitedLiabilityIntValue + principalIntValue + vacationHomeIntValue + vehiclesIntValue + homeFurnishingIntValue + collectiblesIntValue +
+        jewelryFursIntValue;
+        String totalAssetsResult = String.valueOf(totalAssetsIntValue);
+        totalAssetsTF.setText(totalAssetsResult);
+
+        int creditCardIntValue = Integer.parseInt(creditCardStringValue);
+        int incomeTaxIntValue = Integer.parseInt(incomeTaxStringValue);
+        int otherBillsIntValue = Integer.parseInt(otherBillsStringValue);
+        int homeMortgageIntValue = Integer.parseInt(homeMortgageStringValue);
+        int rentalPorpertyMortgagesIntValue = Integer.parseInt(rentalPorpertyMortgagesStringValue);
+        int carLoansIntValue = Integer.parseInt(carLoansStringValue);
+        int studentLoansIntValue = Integer.parseInt(studentLoansStringValue);
+        int lifeInsuranceIntValue = Integer.parseInt(lifeInsuranceStringValue);
+        int otherLongtermDebtIntValue = Integer.parseInt(otherLongtermDebtStringValue);
+        
+        int totalLiabilitiesIntValue = creditCardIntValue + incomeTaxIntValue + otherBillsIntValue + homeMortgageIntValue + rentalPorpertyMortgagesIntValue +
+        carLoansIntValue + studentLoansIntValue + lifeInsuranceIntValue + otherLongtermDebtIntValue;
+        String totalLiabilitesResult = String.valueOf(totalLiabilitiesIntValue);
+        totalLiabilitesTF.setText(totalLiabilitesResult);
+
+        int totalNetWorthIntValue = totalAssetsIntValue - totalLiabilitiesIntValue;
+        String totalNetWorthResult = String.valueOf(totalNetWorthIntValue);
+        totalNetWorthTF.setText(totalNetWorthResult);
+
+    }
     public static void main(String[] args) {
         new calc();
     }
